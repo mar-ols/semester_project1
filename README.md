@@ -1,1 +1,1 @@
-# semester_project1
+# A website for the Community Science Museum
