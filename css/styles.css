@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Cantarell";
+  src: url("../fonts/Cantarell-Regular.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cantarell", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #205567;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Mobile styling */
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.12rem;
+}
+
+.search-label,
+.desktop-logo,
+nav,
+#menu-checkbox,
+.tyranno {
+  display: none;
+}
+
+.logos {
+  width: 21rem;
+  max-width: 100%;
+  margin: 1.5rem auto;
+}
+
+header {
+  background-color: #5cadba;
+  padding: 0 1rem;
+}
+
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+.hamburger-menu {
+  display: block;
+  margin: 0.3rem 0.3rem 1rem 0rem;
+  min-width: 40px;
+}
+
+nav {
+  position: absolute;
+  background-color: #5cadba;
+  margin-top: 2rem;
+}
+
+nav a {
+  display: block;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+}
+
+.search {
+  border-radius: 25px;
+  border: 2px solid #205567;
+  height: 35px;
+  width: 280px;
+  max-width: 100%;
+  background-image: url("../images/assets/search_icon.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px;
+  padding-left: 40px;
+}
+
+.slogan {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.intro {
+  text-align: center;
+  background-color: #ffcf99;
+}
+
+.intro-text {
+  padding: 1rem;
+}
+
+.science-keyhole {
+  padding-top: 1rem;
+  width: 80px;
+}
+
+.explore h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  background-color: #5cadba;
+}
+
+.explore img {
+  width: 336px;
+  border-radius: 30px;
+}
+
+.kids,
+.teachers,
+.researchers {
+  width: 340px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem auto;
+}
+
+.explore label,
+.index-news a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #5cadba;
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#kids,
+#teachers,
+#researchers,
+.hidden-kids,
+.hidden-teachers,
+.hidden-researchers,
+#kids:checked ~ label,
+#teachers:checked ~ label,
+#researchers:checked ~ label {
+  display: none;
+}
+
+.newsletter label,
+#kids:checked ~ .hidden-kids,
+#teachers:checked ~ .hidden-teachers,
+#researchers:checked ~ .hidden-researchers {
+  display: block;
+}
+
+.extras {
+  background-color: #ffcf99;
+  text-align: center;
+  padding: 1rem;
+}
+
+.index-news ul {
+  text-align: left;
+  width: 400px;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.newsletter input {
+  width: 230px;
+  max-width: 100%;
+  border: 2px solid #205567;
+  border-radius: 3px;
+  margin: 1rem 0;
+  padding: 6px;
+}
+
+.newsletter button {
+  padding: 6px;
+  background-color: #5cadba;
+  border: 1px solid;
+}
+
+footer {
+  background-color: #5cadba;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 2rem;
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer img {
+  width: 60px;
+}
+
+footer span {
+  display: block;
+}
+
+.socials {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.socials img {
+  padding: 0 0.5rem;
+}
+
+.footer-support1,
+.footer-support2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+}
