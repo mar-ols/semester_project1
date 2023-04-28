@@ -1,6 +1,13 @@
+@import url(content.css);
+
 @font-face {
   font-family: "Cantarell";
   src: url("../fonts/Cantarell-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cantarell";
+  src: url("../fonts/Cantarell-Bold.ttf") format("truetype");
 }
 
 * {
@@ -11,31 +18,27 @@ body {
   font-family: "Cantarell", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #205567;
   margin: 0;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrapper main {
+  flex: 1;
 }
 
 img {
   max-width: 100%;
 }
 
-/* Mobile styling */
-
-h1 {
-  font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1.25rem;
-}
-
-h3 {
-  font-size: 1.12rem;
-}
-
+nav,
 .search-label,
 .desktop-logo,
-nav,
-#menu-checkbox,
-.tyranno {
+#menu-checkbox {
   display: none;
 }
 
@@ -48,6 +51,7 @@ nav,
 header {
   background-color: #5cadba;
   padding: 0 1rem;
+  margin: 1rem 0;
 }
 
 #menu-checkbox:checked ~ nav {
@@ -71,133 +75,32 @@ nav a {
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 1rem;
+  padding: 0.7rem;
+}
+
+.active {
+  background-color: #ffcf99;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
-  margin-right: 0.5rem;
+}
+
+.search-container {
+  width: 280px;
 }
 
 .search {
   border-radius: 25px;
   border: 2px solid #205567;
   height: 35px;
-  width: 280px;
-  max-width: 100%;
+  width: 100%;
   background-image: url("../images/assets/search_icon.png");
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: 10px;
   padding-left: 40px;
-}
-
-.slogan {
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 0.5rem 0;
-}
-
-.intro {
-  text-align: center;
-  background-color: #ffcf99;
-}
-
-.intro-text {
-  padding: 1rem;
-}
-
-.science-keyhole {
-  padding-top: 1rem;
-  width: 80px;
-}
-
-.explore h2 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.explore {
-  display: flex;
-  flex-direction: column;
-  background-color: #5cadba;
-}
-
-.explore img {
-  width: 336px;
-  border-radius: 30px;
-}
-
-.kids,
-.teachers,
-.researchers {
-  width: 340px;
-  max-width: 100%;
-  background-color: #fff;
-  padding: 1rem;
-  margin: 0.5rem auto;
-}
-
-.explore label,
-.index-news a {
-  color: #000;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  background-color: #5cadba;
-  border-radius: 3px;
-  padding: 0.4rem 0.8rem;
-  margin-bottom: 1rem;
-}
-
-#kids,
-#teachers,
-#researchers,
-.hidden-kids,
-.hidden-teachers,
-.hidden-researchers,
-#kids:checked ~ label,
-#teachers:checked ~ label,
-#researchers:checked ~ label {
-  display: none;
-}
-
-.newsletter label,
-#kids:checked ~ .hidden-kids,
-#teachers:checked ~ .hidden-teachers,
-#researchers:checked ~ .hidden-researchers {
-  display: block;
-}
-
-.extras {
-  background-color: #ffcf99;
-  text-align: center;
-  padding: 1rem;
-}
-
-.index-news ul {
-  text-align: left;
-  width: 400px;
-  max-width: 100%;
-  margin: auto;
-  padding-bottom: 1rem;
-}
-
-.newsletter input {
-  width: 230px;
-  max-width: 100%;
-  border: 2px solid #205567;
-  border-radius: 3px;
-  margin: 1rem 0;
-  padding: 6px;
-}
-
-.newsletter button {
-  padding: 6px;
-  background-color: #5cadba;
-  border: 1px solid;
 }
 
 footer {
@@ -245,4 +148,216 @@ footer span {
   justify-content: center;
   align-items: center;
   padding: 0.5rem 0;
+}
+
+.slogan {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro-text {
+  padding: 1rem;
+  background-color: #ffcf99;
+}
+
+.intro-img,
+.tyranno {
+  display: block;
+}
+
+.science-keyhole {
+  padding-top: 1rem;
+  width: 80px;
+}
+
+.explore-h2 {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #5cadba;
+  padding: 1rem 0rem;
+  margin: 0;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  background-color: #5cadba;
+}
+
+.explore img {
+  width: 395px;
+  border-radius: 30px;
+}
+
+.kids,
+.teachers,
+.researchers {
+  width: 400px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem auto;
+}
+
+.explore label,
+.index-news a {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #5cadba;
+  border-radius: 3px;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#kids,
+#teachers,
+#researchers,
+.hidden-kids,
+.hidden-teachers,
+.hidden-researchers,
+#kids:checked ~ label,
+#teachers:checked ~ label,
+#researchers:checked ~ label {
+  display: none;
+}
+
+.newsletter label,
+#kids:checked ~ .hidden-kids,
+#teachers:checked ~ .hidden-teachers,
+#researchers:checked ~ .hidden-researchers {
+  display: block;
+}
+
+.extras {
+  background-color: #ffcf99;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.index-news ul {
+  text-align: left;
+  width: 450px;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.newsletter input {
+  width: 230px;
+  max-width: 100%;
+  border: 2px solid #205567;
+  border-radius: 3px;
+  margin: 1rem 0;
+  padding: 6px;
+}
+
+.newsletter button {
+  padding: 6px;
+  background-color: #5cadba;
+  border: 1px solid;
+}
+
+@media (min-width: 850px) {
+  header {
+    margin-top: 2rem;
+  }
+
+  .hamburger-menu,
+  .mobile-logo {
+    display: none;
+  }
+
+  .logos {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .desktop-logo {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 70%;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  nav a:hover {
+    background-color: #ffcf99;
+    padding: 0.5rem 1rem;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  footer > * {
+    flex: 1;
+  }
+
+  .intro-text h2 {
+    width: 500px;
+    margin: auto;
+  }
+
+  .explore {
+    flex-direction: row;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .explore div {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  .kids {
+    padding-bottom: 0rem;
+  }
+
+  .tyranno {
+    display: none;
+  }
+
+  .extras {
+    display: flex;
+    padding: 0;
+    align-items: center;
+  }
+
+  .news {
+    width: 40%;
+  }
+
+  .index-news,
+  .newsletter {
+    margin: 1rem;
+  }
+
+  .dino {
+    width: 60%;
+    background-image: url("../images/amy-leigh-barnard-SByb8Ch9XcQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    height: 500px;
+    position: relative;
+  }
 }
