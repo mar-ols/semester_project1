@@ -16,13 +16,20 @@
 
 body {
   font-family: "Cantarell", Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #205567;
+  background-color: #5cadba;
   margin: 0;
   height: 100vh;
 }
 
 h1 {
+  display: block;
   font-size: 1.5rem;
+  background-color: #205567;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
 }
 
 h2 {
@@ -72,15 +79,13 @@ nav,
 }
 
 header {
-  background-color: #5cadba;
   padding: 0 1rem;
-  margin: 1rem 0;
 }
 
 .logos {
   width: 21rem;
   max-width: 100%;
-  margin: 1.5rem auto;
+  margin: auto;
 }
 
 #menu-checkbox:checked ~ nav {
@@ -133,7 +138,6 @@ nav a {
 }
 
 footer {
-  background-color: #5cadba;
   font-size: 0.8rem;
   padding: 1rem;
 }
@@ -176,22 +180,25 @@ footer span {
 }
 
 @media (min-width: 850px) {
-  header {
-    margin-top: 2rem;
-  }
-
   .hamburger-menu,
   .mobile-logo {
     display: none;
   }
 
-  .logos {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
   .desktop-logo {
     display: block;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  .menu {
+    margin: 0 1rem;
+  }
+
+  .logos {
+    width: 100%;
   }
 
   nav {
@@ -200,7 +207,6 @@ footer span {
     justify-content: space-between;
     position: relative;
     width: 70%;
-    font-weight: bold;
     margin-top: 0;
   }
 
