@@ -118,19 +118,25 @@
   background-image: url(../images/alexander-abero-OypnYfdiQgg-unsplash.jpg);
 }
 
-.funfact {
+.funfact-wrapper {
   background-color: #ffcf99;
   text-align: center;
   padding: 1rem;
 }
 
-.funfact h3,
-.funfact p {
-  width: 80%;
-  margin: 1rem auto;
+.funfact {
+  background-color: #205567;
+  padding: 1rem;
 }
 
-.funfact img {
+.funfact-wrapper {
+  width: 550px;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 30px;
+}
+
+.funfact-wrapper img {
   width: 80px;
 }
 
@@ -207,8 +213,7 @@
     width: 50%;
   }
 
-  .funfact h3,
-  .funfact p {
-    width: 500px;
+  .funfact-wrapper {
+    margin: 2rem auto;
   }
 }
