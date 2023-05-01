@@ -35,6 +35,18 @@ h3 {
   font-size: 1.12rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+header {
+  padding: 0 1rem;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -45,12 +57,14 @@ h3 {
   flex: 1;
 }
 
-img {
-  max-width: 100%;
+main::after {
+  display: block;
+  content: "";
+  background-color: #205567;
+  height: 2rem;
 }
 
-.explore label,
-.index-news a {
+.cta {
   color: #000;
   text-decoration: none;
   display: inline-block;
@@ -71,10 +85,6 @@ nav,
 .desktop-logo,
 #menu-checkbox {
   display: none;
-}
-
-header {
-  padding: 0 1rem;
 }
 
 .logos {
@@ -187,7 +197,7 @@ footer span,
   }
 
   header {
-    padding: 0;
+    padding: 0 0 1rem 0;
   }
 
   .menu {
@@ -222,5 +232,9 @@ footer span,
 
   footer > * {
     flex: 1;
+  }
+
+  .socials {
+    padding: 0;
   }
 }
