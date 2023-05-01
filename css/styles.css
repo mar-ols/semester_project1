@@ -5,11 +5,6 @@
   src: url("../fonts/Cantarell-Regular.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Cantarell";
-  src: url("../fonts/Cantarell-Bold.ttf") format("truetype");
-}
-
 * {
   box-sizing: border-box;
 }
@@ -109,6 +104,7 @@ nav a {
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
+  font-weight: 600;
   padding: 0.7rem;
 }
 
@@ -162,7 +158,8 @@ footer img {
   width: 50px;
 }
 
-footer span {
+footer span,
+.visit span {
   display: block;
 }
 

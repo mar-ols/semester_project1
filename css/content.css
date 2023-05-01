@@ -38,7 +38,8 @@
   width: 400px;
   max-width: 100%;
   background-color: #fff;
-  padding: 1rem;
+  border-radius: 30px;
+  padding: 1.5rem;
   margin: 0.5rem auto;
 }
 
@@ -46,6 +47,8 @@
 #teachers,
 #researchers,
 .hidden-kids,
+.library-photo,
+.white-exhibit,
 .hidden-teachers,
 .hidden-researchers,
 #kids:checked ~ label,
@@ -84,7 +87,9 @@
   border: 1px solid;
 }
 
-.text-wrapper {
+.text-wrapper,
+.visit,
+.facilities {
   padding: 1rem;
 }
 
@@ -140,6 +145,29 @@
   width: 80px;
 }
 
+.visit,
+.facilities div {
+  max-width: 400px;
+  margin: auto;
+}
+
+.map {
+  max-width: 400px;
+}
+
+.admission {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.facilities {
+  text-align: center;
+}
+
+.facilities img {
+  max-width: 80px;
+}
+
 @media (min-width: 850px) {
   .intro-text h2 {
     width: 500px;
@@ -153,7 +181,7 @@
   }
 
   .explore div {
-    margin: 0 auto;
+    margin: 0.5rem auto;
   }
 
   .researchers {
@@ -215,5 +243,31 @@
 
   .funfact-wrapper {
     margin: 2rem auto;
+  }
+
+  .white-exhibit,
+  .library-photo {
+    display: inline-block;
+  }
+
+  .visit-photos {
+    display: flex;
+  }
+
+  .visit,
+  .facilities {
+    display: flex;
+    max-width: 1300px;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+  }
+
+  .location {
+    display: flex;
+    margin: auto;
+  }
+
+  .location > * {
+    flex: 1;
   }
 }
