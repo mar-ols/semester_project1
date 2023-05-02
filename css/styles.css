@@ -73,7 +73,7 @@ main::after {
   border: 1px solid #205567;
   border-radius: 3px;
   padding: 0.4rem 0.8rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .cta:hover {
