@@ -35,12 +35,20 @@ h3 {
   font-size: 1.12rem;
 }
 
+a {
+  color: #000;
+}
+
 img {
   max-width: 100%;
 }
 
 .bold {
   font-weight: 600;
+}
+
+.underscore {
+  text-decoration: underline;
 }
 
 header {
@@ -77,7 +85,8 @@ main::after {
 }
 
 .cta:hover {
-  background-color: #ffcf99;
+  background-color: #205567;
+  color: #fff;
 }
 
 nav,
@@ -111,7 +120,6 @@ nav {
 
 nav a {
   display: block;
-  color: #000;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
