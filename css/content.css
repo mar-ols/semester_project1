@@ -140,7 +140,8 @@
 }
 
 .map {
-  max-width: 400px;
+  max-width: 350px;
+  margin-right: 1rem;
 }
 
 .science-news,
@@ -270,11 +271,11 @@
   }
 
   .shorter:hover {
-    height: 600px;
+    height: 610px;
   }
 
   .short:hover {
-    height: 690px;
+    height: 700px;
   }
 
   .long:hover {
@@ -282,7 +283,7 @@
   }
 
   .longer:hover {
-    height: 820px;
+    height: 830px;
   }
 
   .hover {
@@ -355,6 +356,7 @@
     background-image: url("../images/samuel-zeller-113381.jpg");
     height: 800px;
     max-height: 100%;
+    margin-right: 1rem;
   }
 
   .event {
