@@ -88,6 +88,10 @@
   border: 1px solid;
 }
 
+.support-text,
+.volunteer-text,
+.intern-text,
+.about div,
 .science-news div,
 .text-wrapper,
 .visit,
@@ -133,6 +137,7 @@
   width: 80px;
 }
 
+.about div,
 .visit,
 .facilities div {
   max-width: 400px;
@@ -144,6 +149,7 @@
   margin-right: 1rem;
 }
 
+.about,
 .science-news,
 .admission {
   max-width: 600px;
@@ -186,6 +192,45 @@
   margin: auto;
   padding: 1rem;
   color: #fff;
+}
+
+.h2-about {
+  display: block;
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  background-color: #ffcf99;
+}
+
+.staff-text {
+  background-color: #ffcf99;
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+}
+
+.staff-img {
+  max-width: 300px;
+}
+
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.staff div {
+  margin: 1rem;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+.align > * {
+  margin: 0.2rem;
 }
 
 @media (min-width: 850px) {
@@ -283,7 +328,7 @@
   }
 
   .longer:hover {
-    height: 830px;
+    height: 845px;
   }
 
   .hover {
@@ -328,6 +373,7 @@
     display: flex;
   }
 
+  .about,
   .science-news,
   .visit,
   .facilities {
@@ -337,12 +383,17 @@
     margin: 2rem auto;
   }
 
+  .about {
+    max-width: 1000px;
+  }
+
   .events,
   .location {
     display: flex;
     margin: auto;
   }
 
+  .about > *,
   .science-news > *,
   .location > * {
     flex: 1;
@@ -367,6 +418,49 @@
 
   .event-text {
     max-width: 100%;
+  }
+
+  .about {
+    align-items: center;
+  }
+
+  .internship,
+  .volunteer,
+  .support {
+    display: flex;
+    align-items: center;
+  }
+
+  .intern-text,
+  .volunteer-text,
+  .support-text {
+    padding: 1rem 2rem;
+    width: 50%;
+  }
+
+  .supp {
+    width: 50%;
+    background-image: url("../images/iStock-538483350.jpg");
+  }
+
+  .volun {
+    width: 50%;
+    background-image: url("../images/iStock-973292518.jpg");
+  }
+
+  .intern {
+    width: 50%;
+    background-image: url("../images/iStock-538358346.jpg");
+  }
+
+  .intern,
+  .volun,
+  .supp {
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
   }
 }
 

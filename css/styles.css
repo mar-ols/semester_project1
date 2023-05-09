@@ -191,7 +191,8 @@ footer img {
 }
 
 footer span,
-.visit span {
+.visit span,
+.staff-member span {
   display: block;
 }
 
