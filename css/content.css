@@ -99,6 +99,11 @@
   padding: 1rem;
 }
 
+.text-wrapper {
+  max-width: 600px;
+  margin: auto;
+}
+
 .exhibit {
   margin: 1rem;
   padding: 1rem;
@@ -115,7 +120,7 @@
 
 .exhibit-img {
   max-width: 250px;
-  margin-right: 2rem;
+  margin: 1rem auto;
 }
 
 .funfact {
@@ -308,11 +313,19 @@
 
   .exhibit {
     display: flex;
-    height: 280px;
+    height: 260px;
     width: 700px;
     transition: height 2s;
     overflow: hidden;
     margin: 1rem auto;
+  }
+
+  .exhibit-img {
+    margin: 2rem auto;
+  }
+
+  .text-wrapper {
+    max-width: 450px;
   }
 
   .shorter:hover {
@@ -324,11 +337,11 @@
   }
 
   .long:hover {
-    height: 750px;
+    height: 760px;
   }
 
   .longer:hover {
-    height: 845px;
+    height: 810px;
   }
 
   .hover {

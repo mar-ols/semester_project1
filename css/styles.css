@@ -59,16 +59,6 @@ header {
   padding: 0 1rem;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.wrapper main {
-  flex: 1;
-}
-
 .scroll-up {
   background-color: #205567;
   text-align: center;
@@ -76,7 +66,7 @@ header {
 
 .scroll-up img {
   width: 50px;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem;
 }
 
 .cta {
