@@ -307,6 +307,7 @@
     background-image: url("../images/amy-leigh-barnard-SByb8Ch9XcQ-unsplash.jpg");
   }
 
+  .visit-photos,
   .sidebyside {
     display: flex;
   }
@@ -380,10 +381,6 @@
     100% {
       transform: rotate(360deg);
     }
-  }
-
-  .visit-photos {
-    display: flex;
   }
 
   .about,
