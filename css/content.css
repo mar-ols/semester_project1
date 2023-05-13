@@ -449,28 +449,22 @@
   }
 
   .supp {
-    width: 50%;
     background-image: url("../images/iStock-538483350.jpg");
   }
 
   .volun {
-    width: 50%;
     background-image: url("../images/iStock-973292518.jpg");
   }
 
   .intern {
-    width: 50%;
     background-image: url("../images/iStock-538358346.jpg");
   }
 
   .intern,
   .volun,
   .supp {
+    width: 50%;
     height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
   }
 }
 
